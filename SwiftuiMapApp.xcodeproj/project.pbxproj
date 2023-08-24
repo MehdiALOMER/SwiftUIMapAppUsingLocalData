@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B9B92DE2A97D1B500CD4BE4 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B92DD2A97D1B500CD4BE4 /* LocationPreviewView.swift */; };
+		5B9B92E02A97E6B000CD4BE4 /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B92DF2A97E6B000CD4BE4 /* LocationMapAnnotationView.swift */; };
+		5B9B92E22A97F0C100CD4BE4 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9B92E12A97F0C100CD4BE4 /* LocationDetailView.swift */; };
 		5B9BA3812A9698F5007CD269 /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BA3802A9698F5007CD269 /* LocationsListView.swift */; };
 		5B9C4EF42A9624F0006BA602 /* SwiftuiMapAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C4EF32A9624F0006BA602 /* SwiftuiMapAppApp.swift */; };
 		5B9C4EF62A9624F0006BA602 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9C4EF52A9624F0006BA602 /* ContentView.swift */; };
@@ -19,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B9B92DD2A97D1B500CD4BE4 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
+		5B9B92DF2A97E6B000CD4BE4 /* LocationMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotationView.swift; sourceTree = "<group>"; };
+		5B9B92E12A97F0C100CD4BE4 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		5B9B92E32A97FE2C00CD4BE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5B9BA3802A9698F5007CD269 /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
 		5B9C4EF02A9624F0006BA602 /* SwiftuiMapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftuiMapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9C4EF32A9624F0006BA602 /* SwiftuiMapAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftuiMapAppApp.swift; sourceTree = "<group>"; };
@@ -61,6 +68,7 @@
 		5B9C4EF22A9624F0006BA602 /* SwiftuiMapApp */ = {
 			isa = PBXGroup;
 			children = (
+				5B9B92E32A97FE2C00CD4BE4 /* Info.plist */,
 				5B9C4F092A962650006BA602 /* Views */,
 				5B9C4F0A2A962659006BA602 /* ViewModels */,
 				5B9C4F062A9625B7006BA602 /* Models */,
@@ -102,6 +110,9 @@
 			children = (
 				5B9C4F0F2A962979006BA602 /* LocationsView.swift */,
 				5B9BA3802A9698F5007CD269 /* LocationsListView.swift */,
+				5B9B92DD2A97D1B500CD4BE4 /* LocationPreviewView.swift */,
+				5B9B92DF2A97E6B000CD4BE4 /* LocationMapAnnotationView.swift */,
+				5B9B92E12A97F0C100CD4BE4 /* LocationDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,11 +196,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B9C4EF62A9624F0006BA602 /* ContentView.swift in Sources */,
+				5B9B92E02A97E6B000CD4BE4 /* LocationMapAnnotationView.swift in Sources */,
 				5B9BA3812A9698F5007CD269 /* LocationsListView.swift in Sources */,
+				5B9B92DE2A97D1B500CD4BE4 /* LocationPreviewView.swift in Sources */,
 				5B9C4EF42A9624F0006BA602 /* SwiftuiMapAppApp.swift in Sources */,
 				5B9C4F0E2A96291B006BA602 /* LocationsData.swift in Sources */,
 				5B9C4F102A962979006BA602 /* LocationsView.swift in Sources */,
 				5B9C4F082A9625C6006BA602 /* Location.swift in Sources */,
+				5B9B92E22A97F0C100CD4BE4 /* LocationDetailView.swift in Sources */,
 				5B9C4F0C2A962897006BA602 /* LocationsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,9 +336,10 @@
 				DEVELOPMENT_TEAM = MJY5FC9P2R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftuiMapApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Locations";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -351,9 +366,10 @@
 				DEVELOPMENT_TEAM = MJY5FC9P2R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftuiMapApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Locations";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
